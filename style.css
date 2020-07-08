@@ -1,0 +1,1238 @@
+/*
+Theme Name: Boostrap Starter Theme
+Theme URI: http://cobydesigns.budgetchamp.net/
+Author: Coby
+Author URI: http://cobydesigns.budgetchamp.net/
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: bootstrapstarter
+*/
+
+/*
+	Table of contents:
+		1: ------------------------------------------------------------------------- Header
+		2: ------------------------------------------------------------------------- Home
+		3: -------------------------------------------------------------------------- Footer
+		4: -------------------------------------------------------------------------- About Me
+		5: -------------------------------------------------------------------------- Contact
+		6: -------------------------------------------------------------------------- Mobile
+*/
+
+
+	@font-face {
+		font-family: 'LibreFranklin SemiBold';
+		src: url('Fonts/LibreFranklin-SemiBold.eot'); /* IE9 Compat Modes */
+		src: url('Fonts/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('Fonts/LibreFranklin-SemiBold.woff') format('woff'), /* Modern Browsers */
+		url('Fonts/LibreFranklin-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('Fonts/LibreFranklin-SemiBold.svg#svgFontName') format('svg'); /* Legacy iOS */}
+
+
+
+
+
+/* 1:The header image and text*/
+html {
+	width: 100%;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#cover {
+
+	display: none;
+	position: fixed; 
+	height: 100%; 
+	width: 100%; 
+	top:0; 
+	left: 0; 
+	background:white; 
+	z-index:9999;
+}
+
+
+#The-Header {
+	top: 0;
+	width: 100%;
+	height: 750px;
+
+	font-family: "LibreFranklin SemiBold";
+	color: white;
+
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Create the parallax scrolling effect */
+
+	background-image: url(Images/editedImage8.jpg);
+}
+
+
+
+/* The second text */
+#Header {
+  padding-top: 280px;	
+  font-size: 120%;
+  color: white;
+
+  text-align: center;
+}
+
+#FirstHeaderText {
+	white-space: nowrap;
+}
+
+#SecondHeaderText {
+
+	white-space: nowrap;
+	font-size: 147%;
+	color: white;
+	
+}
+
+/*margin-left: 13%; 
+	width: 200px;
+	 text-align: center; */
+
+/* The Menu bar */
+#mainMenu {
+	display: flex;
+
+	font-family: "LibreFranklin SemiBold";
+	z-index: 3001;
+	width: 100%;
+	position: fixed;
+	top: 30px;
+
+	transition: visibility 0.7s;
+	transition: background-color 0.7s;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#HamburgerIconGray {
+	display: flex;
+	display: none;
+}
+
+/* Home Button */
+#HomeButton {
+	font-size: 150%;
+	transition: color 0.7s;
+	color: #696969;
+	
+}
+
+/* The contact button */
+#TheContactButton {
+	border-style: solid;
+	border-color: #CB7E9D;
+
+	transition: color 0.7s;
+	transition: border-color 0.7s;
+
+	background-color:rgba(255, 255, 255, 0);
+	color: #CB7E9D;
+	
+}
+
+#TheContactButton:hover {
+
+	color: white;
+	background-color: #CB7E9D;
+	
+	/*I think the transitions have to be back to back or something. Either way, it can be dificult to tell
+	weather or not two colors are transitioning */
+	transition: color 0.2s;
+	transition: background-color 0.2s;
+
+	border-style: solid;	
+
+}
+
+#ProjectsLink {
+	transition: color 0.7s;
+	color: #808080;
+	margin-right: 20px;
+	font-size: 120%;
+}
+
+#AboutLink{
+	transition: color 0.7s;
+	color: #808080;
+	margin-right: 20px;
+	font-size: 120%;
+	
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+/* 2:The page content, AKA Home ========================================================== */
+
+#ContentStuffOne { /* The entire div */
+
+	background-color: white; 
+
+	margin-top: 80px;
+	margin-bottom: 200px;
+	height: 200px;
+	width: 100%;
+	
+	text-align: center;
+
+	float: left;
+	
+
+}
+#SkillsHeader {
+	color: #8e8e8e;
+	margin-bottom: 70px;
+	margin-left: 0%;
+}
+
+#fadeId {
+	opacity:0; 
+	transition: all 2s;
+}
+
+#fadeId.scroll-triggered {
+	opacity:1; 
+}
+
+
+
+#CardOne { /*The Card entire id*/
+
+	margin-right: 30px;
+	text-align: center;
+	position: relative;
+	background-color: #fafafa;
+}
+
+
+
+
+#CardTwo {
+	text-align: center;
+	position: relative;
+	background-color: #fafafa;
+
+}
+
+
+
+
+#CardThree {
+
+	margin-left: 30px;
+	position: relative;
+	background-color: #fafafa;
+	
+}
+
+
+
+#CardSix {
+	margin-left: 30px;
+}
+
+
+
+#CardHeader {
+	padding-top: 15px;
+	font-size: 140%;
+	color: #787878;
+}
+
+#CardText { /* The div for the card text */
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d9d9d9;
+
+	color: rgb(148, 148, 148);
+
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 173px;
+	padding-bottom: 30px;	
+}
+
+
+.card {
+	width: 20rem;
+}
+.HomeCard {
+	width: 17rem;
+	height: 21rem;
+}
+
+#CardTextTwo {
+	
+	background-color:#f5f5f5;
+	width: 100%;
+	padding-bottom: 70px;
+	
+}
+
+#IconCode {
+
+	text-align: center;
+	width: 20%;
+	height: 46px;
+	
+	border-bottom: solid;
+	border-color: #A84E72;
+
+	font-size: 34px;
+	color: #A84E72;
+}
+
+#ContentStuffOneText { /* The invidual text */
+	font-size: 120%;
+	border-style: none;
+	
+}
+
+
+#space	{
+	margin-top: 550px;
+	height: 1px;
+	
+}
+
+/* About Me*/
+
+/* Background image #2 */
+
+#SecondImage {
+	margin-top: 50px;
+	height: 330px;
+	background-image: url(Images/Stars3.jpg);
+
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#ProfileImage {
+	clear: both;
+	display: block;
+	text-align: center;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: -120px;
+}
+
+/*About me div */
+#AboutMe {
+	margin-left: 0%;
+	padding-top: 80px;
+	
+	height: 330px;
+
+	background-color: #f5f5f5;
+}
+
+/* Header to About */
+#AboutMeHeader {
+	clear: both;
+	color: white;
+	
+	font-size: 300%;
+
+	margin-top: 100px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 80px;
+
+	transition: all 2s;
+}
+
+
+
+#AboutMeBackground {
+	color: white;
+	width: 100%;
+	height: 300px;
+}
+
+
+#AboutMeText {
+	margin-left: 5%;
+	margin-right: 5%;
+	float: none;
+	font-size: 110%;
+	color: #808080;
+
+	transition: all 2s;
+}
+
+
+
+
+#AboutCenter {
+	width: 100%;
+	text-align: center;
+}
+
+/* The about button */
+#TheAboutButton {
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	position: relative;
+
+	border-style: solid;
+	border-color: #B4BF59;
+	border-radius: 25px;
+
+	transition: color 0.7s;
+	transition: border-color 0.7s;
+
+	background-color:rgba(255, 255, 255, 0);
+	color: #B4BF59;
+	font-weight: 550;
+	
+}
+
+#TheAboutButton:hover {
+
+	color: white;
+	background-color:#B4BF59;
+	
+	/*I think the transitions have to be back to back or something. Either way, it can be dificult to tell
+	weather or not two colors are transitioning */
+	transition: color 0.2s;
+	transition: background-color 0.2s;
+
+	border-style: solid;	
+
+}
+
+
+
+
+/* 3: Footer */
+
+#BottomFooter {
+	position: flex;
+	bottom: 0;
+}
+
+#FooterBackground {
+	position: relative;
+	text-align: center;
+	margin-top: 0;
+
+	height: 480px;
+	width: 100%;
+
+	background-color: #CB7E9D;
+	bottom: 0;
+}
+
+#FooterHeader {
+	padding-top: 60px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: white;
+}
+
+#TwitterIcon {
+	color: #eaeaea;
+	font-size: 25px;
+	float: left;
+	margin-left: 5%;
+	margin-right: 20px;
+}
+#TwitterAccount {
+
+	font-size: 118%;
+	float: left;
+	color: #eaeaea;
+}
+
+#GmailIcon {
+	color: #eaeaea;
+	font-size: 25px;
+	float: left;
+	margin-left: 5%;
+	margin-right: 20px;
+}
+#GmailAccount {
+	color: #eaeaea;
+	float: left;
+	font-size: 118%;
+}
+
+#CardBackground {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#CardTextTwo {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#CardFour{
+	background-color: rgba(255, 255, 255, 0);
+}
+#CardFive {
+	background-color: rgba(255, 255, 255, 0);
+	
+}
+
+
+
+#FooterButton {
+
+	clear: both;
+	position: relative;
+	margin-top: -95px;
+	
+	border-style: solid;
+	border-color: #DEE790;
+	border-radius: 25px;
+
+
+	background-color:rgba(255, 255, 255, 0);
+	color: #DEE790;
+	font-weight: 550;
+}
+#FooterButton:hover {
+
+	color: white;
+	background-color: #DEE790;
+
+	
+	
+	/*I think the transitions have to be back to back or something. Either way, it can be dificult to tell
+	weather or not two colors are transitioning */
+
+	
+	transition: color 0.2s;
+	transition: background-color 0.2s;
+
+	border-style: solid;
+	
+	
+
+}
+
+#CopyrightFooter {
+	position: relative;
+	width: 100%;
+	background-color: #CB7E9D;
+	color: white;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 4:About me */
+
+#AboutMeContainer {
+	position: relative;
+	height: 400px;
+	bottom: 0;
+}
+
+#AboutMePHeader {
+
+	top: 0;
+	width: 100%;
+	height: 375px;
+
+	background-attachment: fixed;
+  	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Create the parallax scrolling effect */
+
+	background-image: url(Images/Stars3.jpg);
+
+}
+
+#AboutMePage {
+
+	position: relative;
+
+	padding-top: 50px;
+	height: 356px;
+	bottom: 0px;
+	background-color: #f5f5f5;
+}
+
+#AboutMePImg {
+
+	float: left;
+	margin-left: 30px;
+}
+
+#AboutMePText {
+
+	color: #8e8e8e;
+	font-size: 120%;
+	margin-left: 200px;
+}
+
+
+#OtherMenu {
+	z-index: 1000;
+	width: 100%;
+	position: fixed;
+	top: 30px;
+
+	background-color: rgba(255, 255, 255, 0);
+
+}
+
+
+
+
+
+
+
+
+
+/*5:Contact*/
+
+#ContactHeader {
+	height: 400px;
+	width: 100%;
+
+	background: rgb(211,101,146);
+	background: linear-gradient(90deg, rgba(211,101,146,1) 0%, rgba(211,99,198,1) 48%, rgba(212,97,176,1) 100%); 
+
+}
+
+#ContactHeaderText {
+
+	text-align: center;
+	font-family: "LibreFranklin SemiBold";
+	color: white;
+	margin-left: 0%;
+	padding-top: 170px;
+}
+#ContactContent {
+	text-align: center;
+}
+
+#ContactDescription {
+
+	width: 100%;
+	color: #6e6e6e;
+	font-size: 130%;
+
+	
+	margin-top: 70px;
+	margin-left: 0%;
+	margin-bottom: 50px;
+}
+
+#Email {
+	clear: both;
+	float: left;
+	height: 100px;
+	width: 370px;
+
+	border-radius: 10px;
+	border-width: 0.5px;
+	border-color: #e1e1e1;
+	border-style: solid;
+
+	
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+#ContactIconEmail {
+
+	text-align: center;
+	color: #A84E72;
+
+	font-size: 16px;
+	margin-top: 5px;
+	margin-right: 10px;
+
+}
+
+#ContactEmailText {
+
+	color: #A84E72;
+	float: none;
+	font-size: 19px;
+}
+
+#ContactEmailDescription {
+	margin-top: 15px;
+	clear: both;
+}
+
+#Twitter {
+	float: left;
+	height: 100px;
+	width: 370px;
+
+	border-radius: 10px;
+	border-width: 0.5px;
+	border-color: #e1e1e1;
+	border-style: solid;
+	
+}
+
+#ContactIconTwitter {
+
+	color: #A84E72;
+	float: none;
+	font-size: 16px;
+}
+
+#ContactTwitterText {
+
+	color: #A84E72;
+	float: none;
+	font-size: 19px;
+}
+
+#ContactTwitterDescription {
+	margin-top: 15px;
+	clear: both;
+}
+
+#CopyrightContact {
+
+	position: relative;
+	width: 100%;
+	background-color: white;
+	color:#787878;
+	margin-top: 50px;
+	z-index: 2;
+}
+
+
+
+
+
+
+/*Blog Posts stuff */
+
+#BlogPosts {
+	clear: left;
+}
+
+#BlogTitle {
+	font-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*6:Mobile*/
+
+@media (max-width: 1177px) {
+	#SecondImage {
+		margin-top: 360px;
+	}
+	#CardSix {
+		margin-left: 0px;
+	}
+}
+
+
+
+/*About me Page*/
+@media (max-width: 1000px) {
+
+	#AboutMePage {
+		height: 100%;
+	}
+	#AboutMePText {
+		font-size: 1.7vw;
+	}
+	
+}
+
+@media (max-width: 900px) {
+
+
+	#AboutMePText {
+		font-size: 2vw;
+	}
+	
+}
+
+@media (max-width: 875px) { 
+	#CardThree {
+		margin-left: 0px;
+	}
+	#CardSix {
+		margin-left: 30px;
+	}
+
+}
+
+@media (max-width: 800px) {
+	
+	#AboutMePText {
+		font-size: 2.3vw;
+	}
+
+	#AboutMePImg {
+		width: 15vw;
+		height: 20vw;
+	}
+	
+}
+@media (max-width: 790px) {
+
+	/*Contact Page*/
+
+	#ContactHeader {
+		height: 60vw;
+	}
+
+	#Email {
+		height: 14vw;
+		width: 47vw;
+		margin-right: 0px;
+	}
+	#Twitter {
+		height: 14vw;
+		width: 47vw;
+		margin-right: 0px;
+	}
+
+	#ContactHeaderText {
+		font-size: 5.5vw;
+		padding-top: 25vw;
+	}
+
+	#ContactDescription {
+		font-size: 3vw;
+		
+	}
+	
+
+	#ContactIconEmail {
+		font-size: 2.2vw;
+	}
+
+	#ContactEmailText {
+
+		color: #A84E72;
+		float: none;
+		font-size: 3vw;
+	}
+	#ContactEmailDescription {
+		font-size: 2.2vw;
+		margin-top: 0;
+	}
+
+	#ContactIconTwitter {
+		font-size: 2.2vw;
+	}
+
+	#ContactTwitterText {
+
+		color: #A84E72;
+		float: none;
+		font-size: 3vw;
+	}
+	
+	#ContactTwitterDescription {
+		font-size: 2.2vw;
+		margin-top: 0px;
+	
+	}
+
+
+
+
+
+}
+
+
+/*Repositioning for long screens, it needs to be before
+the mobile positioning because they tend to have longer screens
+*/
+@media (min-height: 1030px) {
+	#ButtonMargin {
+		margin-top: -9vh;
+	}	
+}
+
+@media (min-height: 2030px) {
+	#ButtonMargin {
+		margin-top: -5vh;
+	}	
+}
+
+@media (max-width: 660px) {
+	
+	
+	/* The Header */
+	#The-Header {
+		
+		height: 550px;	
+	}
+
+	
+	
+
+	/* Home Content */
+
+
+	/* Cards */
+	#CardOne {
+		
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#CardTwo {
+		clear: both;
+		float: left;
+
+		margin-left: 0;
+		width: 100%;
+
+
+	}
+	#CardThree {
+		clear: both;
+		float: left;
+
+		margin-left: 0;
+		width: 100%;
+
+	}
+
+	#CardSix {
+		clear: both;
+		float: left;
+
+		margin-left: 0;
+		width: 100%;
+
+
+	}
+
+	#IconCode {
+		font-size: 10vw;
+		border-style: none;
+	}
+
+	#CardHeader {
+		font-size: 5.5vw;
+	}
+
+	#CardText {
+		font-size: 3.7vw;
+	}
+
+	#SkillsHeader {
+
+		font-size: 8vw;
+	}
+
+	#SecondImage {
+		margin-top: 1030px;
+	}
+
+	/* About me */
+	#AboutMeHeader {
+		text-align: center;
+		font-size: 8vw;
+	}
+
+	#AboutMe {
+		height: 60vw;
+	}
+
+	#AboutMeText {
+		font-size: 3vw;
+	}
+
+	#TheAboutButton {
+		font-size: 3.5vw;
+		margin-top: 0px;
+		top: 0;
+	}
+
+	/*Footer*/
+
+	#FooterHeader {
+		font-size: 6vw;
+	}
+
+	#FooterBackground {
+		text-align: center;
+		height: 680px;
+	}
+
+	#Twitter {
+		height: 20vw;
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 0;
+	}
+
+	#TwitterIcon {
+		position: relative;
+		clear: both;
+		float: none;
+
+		width: 100%;
+		font-size: 8vw;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#TwitterAccount {
+
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+		font-size: 3.4vw;
+		margin-bottom: 30px;
+		float: left;
+	}
+
+	#Email {
+		height: 20vw;
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 0;
+	}
+
+	#GmailIcon {
+
+		position: relative;
+		clear: both;
+		float: none;
+
+		width: 100%;
+		font-size: 8vw;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#GmailAccount {
+
+		position: relative;
+		width: 100%;
+		font-size: 3.5vw;
+		margin-bottom: 30px;
+		float: left;
+
+	}
+
+	/*Button margin for the footer*/
+	#ButtonMargin {
+		margin-top: -115px;;
+	}
+
+	#FooterButton {
+		font-size: 3.5vw;
+		margin-top: 0px;
+		top: 0;
+	}
+
+	#CopyrightFooter {
+		font-size: 2.7vw;
+		padding-top: 20px;
+	}
+
+	/* Contact */
+
+	#CopyrightContact {
+		font-size: 2.7vw;
+	}
+
+}
+
+/* About me Page */
+@media (max-width: 650px) {
+
+	#AboutMeContainer {
+		height: 90vw;
+	}
+
+	#AboutMePHeader {
+		height: 45vw;
+	}
+
+	#AboutMePage {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+	#AboutMePText {
+
+		white-space: normal;
+		font-size: 2.2vw;
+		text-align: left;
+		margin-left: 0;
+		width: 100%;
+		
+		
+	}
+
+	#ContactDescription {
+		margin-top: 70px;
+
+	}
+
+	
+	#AboutMePImg {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		float: none;
+	}
+	
+}
+
+
+
+
+@media (max-width: 639px) {
+	#ButtonMargin {
+		margin-top: -10vw;
+	}
+}
+
+@media (max-width: 572px) {
+	#ButtonMargin {
+		margin-top: -15vw;
+	}
+}
+
+@media (max-width: 520px) {
+	#ButtonMargin {
+		margin-top: -20vw;
+	}
+}
+
+/*Header of the home page*/
+
+@media (max-width: 440px) {
+
+	#FirstHeaderText {
+		text-align: center;
+		font-size: 7.5vw;
+	}
+	#SecondHeaderText {
+		text-align: center;
+		font-size: 5vw;
+	}
+
+	#FooterHeader {
+		font-size: 7vw;
+	}
+
+	#AboutMe {
+		height: 90vw;
+	}
+
+	
+}
+
+
+@media (max-width: 400px) {
+	#ButtonMargin {
+		margin-top: -25vw;
+	}
+}
+
+@media (max-width: 390px) {
+
+	#FirstHeaderText {
+		text-align: center;
+		font-size: 8.5vw;
+	}
+	#SecondHeaderText {
+		text-align: center;
+		font-size: 6vw;
+	}
+
+	#AboutMePText {
+		font-size: 2.7vw;
+	}
+}
+
+
+@media (max-width: 370px) {
+	#ButtonMargin {
+		margin-top: -40vw;
+	}
+
+	#AboutMeContainer {
+		height: 100vw;
+	}
+}
+
+
+@media (max-width: 320px) {
+	#ButtonMargin {
+		margin-top: -50vw;
+	}
+}
+
+@media (max-width: 280px) {
+	#ButtonMargin {
+		margin-top: -70vw;
+	}
+}
+
+/* 7: Large Desktops */
+
+@media (min-height: 1030px) {
+
+	#FooterBackground {
+		text-align: center;
+		height: 580px;
+	}
+
+}
+
