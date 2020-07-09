@@ -24,7 +24,7 @@ http://cobydesigns.budgetchamp.net/
  ## Dev notes
  
  - sidebar.php is not being used because I decided it wasn't needed. I kept it just in case I wanted to add a sidebar to the blog side of the website.
- - In the new.js file there is a line to asure that none of the rest of the elements load before the whole page has loaded. Although the 
+ - In the new.js file there is a line to asure that none of the rest of the elements load before the whole page has loaded.
 ```javascript
 $(window).load(function() {
     $("#cover").hide();
