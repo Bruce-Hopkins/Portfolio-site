@@ -30,7 +30,7 @@ $(window).load(function() {
     $("#cover").hide();
   });
 ```
-Just in case Javascript doesn't load well the cover is only shown if the Javascript loads
+Just in case Javascript doesn't load well the cover is only shown if the Javascript loads.
 
 ```javascript
  jQuery(document).ready(function($) {
