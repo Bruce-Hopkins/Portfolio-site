@@ -10,9 +10,9 @@
 
 http://cobydesigns.budgetchamp.net/
 
-If you want to see my newest portfolio look here:
+If you want to see my newest portfolio:
 
-http://www.infinidream.net/
+https://github.com/Bruce-Hopkins-Jr/infinidreams-Potfolio
 
 ## Requieremnets
 
