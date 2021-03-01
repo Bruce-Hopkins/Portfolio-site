@@ -10,7 +10,7 @@
 
 http://cobydesigns.budgetchamp.net/
 
-If you want to see my newest password look here:
+If you want to see my newest portfolio look here:
 
 http://www.infinidream.net/
 
